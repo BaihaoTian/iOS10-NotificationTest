@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pushPicBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pushGifBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pushVideoBtn;
+    @property (weak, nonatomic) IBOutlet UIButton *pushiOS9Noti;
 
 @end
 
@@ -69,7 +70,7 @@
         content.sound = sound;
         
         // 3.触发模式
-        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
         
         // 4.设置UNNotificationRequest
         NSString *requestIdentifer = @"TestPicRequest";
@@ -116,9 +117,9 @@
         content.attachments = @[att];
         content.launchImageName = @"Icon-60@2x";
         // 2.设置声音
-        UNNotificationSound *sound = [UNNotificationSound defaultSound];
-        //        NSString *path1 = [[NSBundle mainBundle] pathForResource:@"haveorder" ofType:@"wav"];
-        //        UNNotificationSound *sound = [UNNotificationSound soundNamed:path1];
+//        UNNotificationSound *sound = [UNNotificationSound defaultSound];
+                NSString *path1 = [[NSBundle mainBundle] pathForResource:@"deliveryorder" ofType:@"mp3"];
+                UNNotificationSound *sound = [UNNotificationSound soundNamed:path1];
         
         content.sound = sound;
         
@@ -192,6 +193,34 @@
 
 }
 
+//- (IBAction)postOldNotification:(id)sender {
+//    
+//    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+//    if (localNotification == nil) {
+//        return;
+//    }
+//    //设置本地通知的触发时间（如果要立即触发，无需设置），这里设置为20妙后
+//    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+//    //设置本地通知的时区
+//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+//    //设置通知的内容
+//    localNotification.alertBody = @"123";
+//    //设置通知动作按钮的标题
+//    localNotification.alertAction = @"查看";
+//    //设置提醒的声音，可以自己添加声音文件，这里设置为默认提示声
+//    localNotification.soundName = UILocalNotificationDefaultSoundName;
+//    //设置通知的相关信息，这个很重要，可以添加一些标记性内容，方便以后区分和获取通知的信息
+//    NSDictionary *infoDic = [NSDictionary dictionaryWithObjectsAndKeys:@"123",@"id",[NSNumber numberWithInteger:1],@"time",[NSNumber numberWithInt:10],@"affair.aid", nil];
+//    
+//    localNotification.userInfo = infoDic;
+//    //在规定的日期触发通知
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+//    
+//    //立即触发一个通知
+//    //    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+//
+//}
+    
 
 #pragma mark - alert 
 - (void)alertTips{

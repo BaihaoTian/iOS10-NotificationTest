@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD08706E1DAB7B130044A0A2 /* deliveryorder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD08706D1DAB7B130044A0A2 /* deliveryorder.mp3 */; };
+		AD0870AD1DADE27D0044A0A2 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870AC1DADE27D0044A0A2 /* NotificationService.m */; };
+		AD0870B11DADE27D0044A0A2 /* SDGPushServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD0870A91DADE27D0044A0A2 /* SDGPushServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD0870BA1DADE44F0044A0A2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0870751DAC89E20044A0A2 /* UserNotifications.framework */; };
+		AD0870BB1DADE44F0044A0A2 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0870771DAC89E20044A0A2 /* UserNotificationsUI.framework */; };
+		AD0870BF1DADE44F0044A0A2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */; };
+		AD0870C21DADE44F0044A0A2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0870C01DADE44F0044A0A2 /* MainInterface.storyboard */; };
+		AD0870C61DADE44F0044A0A2 /* SDGNOtificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD0870B91DADE44F0044A0A2 /* SDGNOtificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD107D041D9E0EEF005E435C /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AD107D031D9E0EEF005E435C /* test1.gif */; };
-		AD1B017D1D9D00DE001B02F7 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B017C1D9D00DE001B02F7 /* NotificationService.m */; };
-		AD1B01811D9D00DE001B02F7 /* SDGNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD1B01791D9D00DE001B02F7 /* SDGNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AD1B01861D9D1D1A001B02F7 /* flv视频测试用例1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */; };
 		AD5A07C61D9A4890008FD7B2 /* haveorder.wav in Resources */ = {isa = PBXBuildFile; fileRef = AD5A07C51D9A4890008FD7B2 /* haveorder.wav */; };
 		AD5D64301D9B5D38009F9C46 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */; };
@@ -25,12 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD1B017F1D9D00DE001B02F7 /* PBXContainerItemProxy */ = {
+		AD0870AF1DADE27D0044A0A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD5E77AB1D9950990075A314 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AD1B01781D9D00DE001B02F7;
-			remoteInfo = SDGNotificationService;
+			remoteGlobalIDString = AD0870A81DADE27D0044A0A2;
+			remoteInfo = SDGPushServiceExtension;
+		};
+		AD0870C41DADE44F0044A0A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5E77AB1D9950990075A314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD0870B81DADE44F0044A0A2;
+			remoteInfo = SDGNOtificationExtension;
 		};
 		AD5E77CD1D9950990075A314 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -55,7 +68,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				AD1B01811D9D00DE001B02F7 /* SDGNotificationService.appex in Embed App Extensions */,
+				AD0870C61DADE44F0044A0A2 /* SDGNOtificationExtension.appex in Embed App Extensions */,
+				AD0870B11DADE27D0044A0A2 /* SDGPushServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,11 +77,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD08706D1DAB7B130044A0A2 /* deliveryorder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deliveryorder.mp3; sourceTree = "<group>"; };
+		AD0870751DAC89E20044A0A2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		AD0870771DAC89E20044A0A2 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		AD0870A91DADE27D0044A0A2 /* SDGPushServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SDGPushServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0870AB1DADE27D0044A0A2 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		AD0870AC1DADE27D0044A0A2 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		AD0870AE1DADE27D0044A0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0870B91DADE44F0044A0A2 /* SDGNOtificationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SDGNOtificationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0870BD1DADE44F0044A0A2 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		AD0870C11DADE44F0044A0A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AD0870C31DADE44F0044A0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD107D031D9E0EEF005E435C /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test1.gif; sourceTree = "<group>"; };
-		AD1B01791D9D00DE001B02F7 /* SDGNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SDGNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD1B017B1D9D00DE001B02F7 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
-		AD1B017C1D9D00DE001B02F7 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
-		AD1B017E1D9D00DE001B02F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "flv视频测试用例1.mp4"; sourceTree = "<group>"; };
 		AD5A07C51D9A4890008FD7B2 /* haveorder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haveorder.wav; sourceTree = "<group>"; };
 		AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
@@ -92,10 +114,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD1B01761D9D00DE001B02F7 /* Frameworks */ = {
+		AD0870A61DADE27D0044A0A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0870B61DADE44F0044A0A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0870BB1DADE44F0044A0A2 /* UserNotificationsUI.framework in Frameworks */,
+				AD0870BA1DADE44F0044A0A2 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,14 +154,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD1B017A1D9D00DE001B02F7 /* SDGNotificationService */ = {
+		AD0870741DAC89E20044A0A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD1B017B1D9D00DE001B02F7 /* NotificationService.h */,
-				AD1B017C1D9D00DE001B02F7 /* NotificationService.m */,
-				AD1B017E1D9D00DE001B02F7 /* Info.plist */,
+				AD0870751DAC89E20044A0A2 /* UserNotifications.framework */,
+				AD0870771DAC89E20044A0A2 /* UserNotificationsUI.framework */,
 			);
-			path = SDGNotificationService;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD0870AA1DADE27D0044A0A2 /* SDGPushServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AD0870AB1DADE27D0044A0A2 /* NotificationService.h */,
+				AD0870AC1DADE27D0044A0A2 /* NotificationService.m */,
+				AD0870AE1DADE27D0044A0A2 /* Info.plist */,
+			);
+			path = SDGPushServiceExtension;
+			sourceTree = "<group>";
+		};
+		AD0870BC1DADE44F0044A0A2 /* SDGNOtificationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AD0870BD1DADE44F0044A0A2 /* NotificationViewController.h */,
+				AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */,
+				AD0870C01DADE44F0044A0A2 /* MainInterface.storyboard */,
+				AD0870C31DADE44F0044A0A2 /* Info.plist */,
+			);
+			path = SDGNOtificationExtension;
 			sourceTree = "<group>";
 		};
 		AD5E77AA1D9950990075A314 = {
@@ -139,7 +190,9 @@
 				AD5E77B51D9950990075A314 /* iOS-10-NotificationTest */,
 				AD5E77CF1D9950990075A314 /* iOS-10-NotificationTestTests */,
 				AD5E77DA1D9950990075A314 /* iOS-10-NotificationTestUITests */,
-				AD1B017A1D9D00DE001B02F7 /* SDGNotificationService */,
+				AD0870AA1DADE27D0044A0A2 /* SDGPushServiceExtension */,
+				AD0870BC1DADE44F0044A0A2 /* SDGNOtificationExtension */,
+				AD0870741DAC89E20044A0A2 /* Frameworks */,
 				AD5E77B41D9950990075A314 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,7 +203,8 @@
 				AD5E77B31D9950990075A314 /* iOS-10-NotificationTest.app */,
 				AD5E77CC1D9950990075A314 /* iOS-10-NotificationTestTests.xctest */,
 				AD5E77D71D9950990075A314 /* iOS-10-NotificationTestUITests.xctest */,
-				AD1B01791D9D00DE001B02F7 /* SDGNotificationService.appex */,
+				AD0870A91DADE27D0044A0A2 /* SDGPushServiceExtension.appex */,
+				AD0870B91DADE44F0044A0A2 /* SDGNOtificationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +212,7 @@
 		AD5E77B51D9950990075A314 /* iOS-10-NotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD08706D1DAB7B130044A0A2 /* deliveryorder.mp3 */,
 				AD107D031D9E0EEF005E435C /* test1.gif */,
 				AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */,
 				AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */,
@@ -206,21 +261,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD1B01781D9D00DE001B02F7 /* SDGNotificationService */ = {
+		AD0870A81DADE27D0044A0A2 /* SDGPushServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD1B01821D9D00DE001B02F7 /* Build configuration list for PBXNativeTarget "SDGNotificationService" */;
+			buildConfigurationList = AD0870B21DADE27D0044A0A2 /* Build configuration list for PBXNativeTarget "SDGPushServiceExtension" */;
 			buildPhases = (
-				AD1B01751D9D00DE001B02F7 /* Sources */,
-				AD1B01761D9D00DE001B02F7 /* Frameworks */,
-				AD1B01771D9D00DE001B02F7 /* Resources */,
+				AD0870A51DADE27D0044A0A2 /* Sources */,
+				AD0870A61DADE27D0044A0A2 /* Frameworks */,
+				AD0870A71DADE27D0044A0A2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SDGNotificationService;
-			productName = SDGNotificationService;
-			productReference = AD1B01791D9D00DE001B02F7 /* SDGNotificationService.appex */;
+			name = SDGPushServiceExtension;
+			productName = SDGPushServiceExtension;
+			productReference = AD0870A91DADE27D0044A0A2 /* SDGPushServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AD0870B81DADE44F0044A0A2 /* SDGNOtificationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD0870C71DADE44F0044A0A2 /* Build configuration list for PBXNativeTarget "SDGNOtificationExtension" */;
+			buildPhases = (
+				AD0870B51DADE44F0044A0A2 /* Sources */,
+				AD0870B61DADE44F0044A0A2 /* Frameworks */,
+				AD0870B71DADE44F0044A0A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDGNOtificationExtension;
+			productName = SDGNOtificationExtension;
+			productReference = AD0870B91DADE44F0044A0A2 /* SDGNOtificationExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		AD5E77B21D9950990075A314 /* iOS-10-NotificationTest */ = {
@@ -235,7 +307,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				AD1B01801D9D00DE001B02F7 /* PBXTargetDependency */,
+				AD0870B01DADE27D0044A0A2 /* PBXTargetDependency */,
+				AD0870C51DADE44F0044A0A2 /* PBXTargetDependency */,
 			);
 			name = "iOS-10-NotificationTest";
 			productName = "iOS-10-NotificationTest";
@@ -287,7 +360,12 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Bc.whi1te_Lei;
 				TargetAttributes = {
-					AD1B01781D9D00DE001B02F7 = {
+					AD0870A81DADE27D0044A0A2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CMJLFY38XN;
+						ProvisioningStyle = Automatic;
+					};
+					AD0870B81DADE44F0044A0A2 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = CMJLFY38XN;
 						ProvisioningStyle = Automatic;
@@ -332,16 +410,25 @@
 				AD5E77B21D9950990075A314 /* iOS-10-NotificationTest */,
 				AD5E77CB1D9950990075A314 /* iOS-10-NotificationTestTests */,
 				AD5E77D61D9950990075A314 /* iOS-10-NotificationTestUITests */,
-				AD1B01781D9D00DE001B02F7 /* SDGNotificationService */,
+				AD0870A81DADE27D0044A0A2 /* SDGPushServiceExtension */,
+				AD0870B81DADE44F0044A0A2 /* SDGNOtificationExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD1B01771D9D00DE001B02F7 /* Resources */ = {
+		AD0870A71DADE27D0044A0A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0870B71DADE44F0044A0A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0870C21DADE44F0044A0A2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +441,7 @@
 				AD5A07C61D9A4890008FD7B2 /* haveorder.wav in Resources */,
 				AD5E77C11D9950990075A314 /* Main.storyboard in Resources */,
 				AD5D64301D9B5D38009F9C46 /* Icon-29@2x.png in Resources */,
+				AD08706E1DAB7B130044A0A2 /* deliveryorder.mp3 in Resources */,
 				AD1B01861D9D1D1A001B02F7 /* flv视频测试用例1.mp4 in Resources */,
 				AD107D041D9E0EEF005E435C /* test1.gif in Resources */,
 				AD5E77F01D9A1FA20075A314 /* Icon-60@2x.png in Resources */,
@@ -377,11 +465,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AD1B01751D9D00DE001B02F7 /* Sources */ = {
+		AD0870A51DADE27D0044A0A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1B017D1D9D00DE001B02F7 /* NotificationService.m in Sources */,
+				AD0870AD1DADE27D0044A0A2 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD0870B51DADE44F0044A0A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0870BF1DADE44F0044A0A2 /* NotificationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +510,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD1B01801D9D00DE001B02F7 /* PBXTargetDependency */ = {
+		AD0870B01DADE27D0044A0A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AD1B01781D9D00DE001B02F7 /* SDGNotificationService */;
-			targetProxy = AD1B017F1D9D00DE001B02F7 /* PBXContainerItemProxy */;
+			target = AD0870A81DADE27D0044A0A2 /* SDGPushServiceExtension */;
+			targetProxy = AD0870AF1DADE27D0044A0A2 /* PBXContainerItemProxy */;
+		};
+		AD0870C51DADE44F0044A0A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD0870B81DADE44F0044A0A2 /* SDGNOtificationExtension */;
+			targetProxy = AD0870C41DADE44F0044A0A2 /* PBXContainerItemProxy */;
 		};
 		AD5E77CE1D9950990075A314 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -432,6 +533,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AD0870C01DADE44F0044A0A2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD0870C11DADE44F0044A0A2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		AD5E77BF1D9950990075A314 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,25 +560,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AD1B01831D9D00DE001B02F7 /* Debug */ = {
+		AD0870B31DADE27D0044A0A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = CMJLFY38XN;
-				INFOPLIST_FILE = SDGNotificationService/Info.plist;
+				INFOPLIST_FILE = SDGPushServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BHT.iOS-10-NotificationTest.SDGNotificationService";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest.SDGPushServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		AD1B01841D9D00DE001B02F7 /* Release */ = {
+		AD0870B41DADE27D0044A0A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = CMJLFY38XN;
-				INFOPLIST_FILE = SDGNotificationService/Info.plist;
+				INFOPLIST_FILE = SDGPushServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BHT.iOS-10-NotificationTest.SDGNotificationService";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest.SDGPushServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AD0870C81DADE44F0044A0A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CMJLFY38XN;
+				INFOPLIST_FILE = SDGNOtificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest.SDGNOtificationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AD0870C91DADE44F0044A0A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CMJLFY38XN;
+				INFOPLIST_FILE = SDGNOtificationExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest.SDGNOtificationExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -515,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -557,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,11 +707,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-10-NotificationTest/iOS-10-NotificationTest.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = CMJLFY38XN;
 				INFOPLIST_FILE = "iOS-10-NotificationTest/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BHT.iOS-10-NotificationTest";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -585,11 +723,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-10-NotificationTest/iOS-10-NotificationTest.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = CMJLFY38XN;
 				INFOPLIST_FILE = "iOS-10-NotificationTest/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "BHT.iOS-10-NotificationTest";
+				PRODUCT_BUNDLE_IDENTIFIER = BHT.iOS10NotificationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -644,14 +783,21 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD1B01821D9D00DE001B02F7 /* Build configuration list for PBXNativeTarget "SDGNotificationService" */ = {
+		AD0870B21DADE27D0044A0A2 /* Build configuration list for PBXNativeTarget "SDGPushServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD1B01831D9D00DE001B02F7 /* Debug */,
-				AD1B01841D9D00DE001B02F7 /* Release */,
+				AD0870B31DADE27D0044A0A2 /* Debug */,
+				AD0870B41DADE27D0044A0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		AD0870C71DADE44F0044A0A2 /* Build configuration list for PBXNativeTarget "SDGNOtificationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0870C81DADE44F0044A0A2 /* Debug */,
+				AD0870C91DADE44F0044A0A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		AD5E77AE1D9950990075A314 /* Build configuration list for PBXProject "iOS-10-NotificationTest" */ = {
 			isa = XCConfigurationList;

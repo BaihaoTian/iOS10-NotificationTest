@@ -4,24 +4,48 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SDGNotificationService.xcscheme</key>
+		<key>SDGNOtificationExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>SDGNotificationServiceExtension.xcscheme</key>
+		<key>SDGPushServiceExtension.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>iOS-10-NotificationTest.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AD0870721DAC89E20044A0A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD08709D1DACE2B90044A0A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD0870A81DADE27D0044A0A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD0870B81DADE44F0044A0A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AD1B01781D9D00DE001B02F7</key>
 		<dict>
 			<key>primary</key>

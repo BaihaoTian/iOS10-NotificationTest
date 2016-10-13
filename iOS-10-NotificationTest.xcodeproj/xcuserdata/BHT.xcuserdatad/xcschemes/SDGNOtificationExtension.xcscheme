@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD1B01781D9D00DE001B02F7"
-               BuildableName = "SDGNotificationService.appex"
-               BlueprintName = "SDGNotificationService"
+               BlueprintIdentifier = "AD0870B81DADE44F0044A0A2"
+               BuildableName = "SDGNOtificationExtension.appex"
+               BlueprintName = "SDGNOtificationExtension"
                ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD1B01781D9D00DE001B02F7"
-            BuildableName = "SDGNotificationService.appex"
-            BlueprintName = "SDGNotificationService"
+            BlueprintIdentifier = "AD0870B81DADE44F0044A0A2"
+            BuildableName = "SDGNOtificationExtension.appex"
+            BlueprintName = "SDGNOtificationExtension"
             ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

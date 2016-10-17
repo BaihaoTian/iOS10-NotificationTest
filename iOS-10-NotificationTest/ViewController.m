@@ -193,33 +193,32 @@
 
 }
 
-//- (IBAction)postOldNotification:(id)sender {
-//    
-//    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-//    if (localNotification == nil) {
-//        return;
+//- (void)scheduleNotification{
+//    UILocalNotification *notification = [[UILocalNotification alloc] init];
+//    //设置5秒之后
+//    NSDate *pushDate = [NSDate dateWithTimeIntervalSinceNow:5];
+//    if (notification != nil) {
+//        // 设置推送时间（5秒后）
+//        notification.fireDate = pushDate;
+//        // 设置时区（此为默认时区）
+//        notification.timeZone = [NSTimeZone defaultTimeZone];
+//        // 设置重复间隔（默认0，不重复推送）
+//        notification.repeatInterval = 0;
+//        // 推送声音（系统默认）
+//        notification.soundName = UILocalNotificationDefaultSoundName;
+//        // 推送内容
+//        notification.alertBody = @"推送主体内容";
+//        //显示在icon上的数字
+//        notification.applicationIconBadgeNumber = 1;
+//        //设置userinfo 方便在之后需要撤销的时候使用
+//        NSDictionary *info = [NSDictionary dictionaryWithObject:@"name"forKey:@"key"];
+//        notification.userInfo = info;
+//        //添加推送到UIApplication
+//        UIApplication *app = [UIApplication sharedApplication];
+//        [app scheduleLocalNotification:notification];
 //    }
-//    //设置本地通知的触发时间（如果要立即触发，无需设置），这里设置为20妙后
-//    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
-//    //设置本地通知的时区
-//    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-//    //设置通知的内容
-//    localNotification.alertBody = @"123";
-//    //设置通知动作按钮的标题
-//    localNotification.alertAction = @"查看";
-//    //设置提醒的声音，可以自己添加声音文件，这里设置为默认提示声
-//    localNotification.soundName = UILocalNotificationDefaultSoundName;
-//    //设置通知的相关信息，这个很重要，可以添加一些标记性内容，方便以后区分和获取通知的信息
-//    NSDictionary *infoDic = [NSDictionary dictionaryWithObjectsAndKeys:@"123",@"id",[NSNumber numberWithInteger:1],@"time",[NSNumber numberWithInt:10],@"affair.aid", nil];
-//    
-//    localNotification.userInfo = infoDic;
-//    //在规定的日期触发通知
-//    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-//    
-//    //立即触发一个通知
-//    //    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
-//
 //}
+
     
 
 #pragma mark - alert 

@@ -15,6 +15,8 @@
 		AD0870BF1DADE44F0044A0A2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */; };
 		AD0870C21DADE44F0044A0A2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0870C01DADE44F0044A0A2 /* MainInterface.storyboard */; };
 		AD0870C61DADE44F0044A0A2 /* SDGNOtificationExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD0870B91DADE44F0044A0A2 /* SDGNOtificationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD0870CC1DB08BF00044A0A2 /* SOAComponentAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870CB1DB08BF00044A0A2 /* SOAComponentAppDelegate.m */; };
+		AD0870CF1DB0B8E40044A0A2 /* SOANotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870CE1DB0B8E40044A0A2 /* SOANotificationService.m */; };
 		AD107D041D9E0EEF005E435C /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AD107D031D9E0EEF005E435C /* test1.gif */; };
 		AD1B01861D9D1D1A001B02F7 /* flv视频测试用例1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */; };
 		AD5A07C61D9A4890008FD7B2 /* haveorder.wav in Resources */ = {isa = PBXBuildFile; fileRef = AD5A07C51D9A4890008FD7B2 /* haveorder.wav */; };
@@ -89,6 +91,10 @@
 		AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		AD0870C11DADE44F0044A0A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		AD0870C31DADE44F0044A0A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0870CA1DB08BF00044A0A2 /* SOAComponentAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAComponentAppDelegate.h; sourceTree = "<group>"; };
+		AD0870CB1DB08BF00044A0A2 /* SOAComponentAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAComponentAppDelegate.m; sourceTree = "<group>"; };
+		AD0870CD1DB0B8E40044A0A2 /* SOANotificationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOANotificationService.h; sourceTree = "<group>"; };
+		AD0870CE1DB0B8E40044A0A2 /* SOANotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOANotificationService.m; sourceTree = "<group>"; };
 		AD107D031D9E0EEF005E435C /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test1.gif; sourceTree = "<group>"; };
 		AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "flv视频测试用例1.mp4"; sourceTree = "<group>"; };
 		AD5A07C51D9A4890008FD7B2 /* haveorder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haveorder.wav; sourceTree = "<group>"; };
@@ -224,6 +230,10 @@
 				AD5E77BA1D9950990075A314 /* AppDelegate.m */,
 				AD5E77BC1D9950990075A314 /* ViewController.h */,
 				AD5E77BD1D9950990075A314 /* ViewController.m */,
+				AD0870CA1DB08BF00044A0A2 /* SOAComponentAppDelegate.h */,
+				AD0870CB1DB08BF00044A0A2 /* SOAComponentAppDelegate.m */,
+				AD0870CD1DB0B8E40044A0A2 /* SOANotificationService.h */,
+				AD0870CE1DB0B8E40044A0A2 /* SOANotificationService.m */,
 				AD5E77BF1D9950990075A314 /* Main.storyboard */,
 				AD5E77C41D9950990075A314 /* LaunchScreen.storyboard */,
 				AD5E77C71D9950990075A314 /* Info.plist */,
@@ -487,7 +497,9 @@
 			files = (
 				AD5E77BE1D9950990075A314 /* ViewController.m in Sources */,
 				AD5E77BB1D9950990075A314 /* AppDelegate.m in Sources */,
+				AD0870CC1DB08BF00044A0A2 /* SOAComponentAppDelegate.m in Sources */,
 				AD5E77B81D9950990075A314 /* main.m in Sources */,
+				AD0870CF1DB0B8E40044A0A2 /* SOANotificationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

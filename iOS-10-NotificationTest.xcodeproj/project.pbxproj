@@ -19,8 +19,9 @@
 		AD0870CF1DB0B8E40044A0A2 /* SOANotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0870CE1DB0B8E40044A0A2 /* SOANotificationService.m */; };
 		AD107D041D9E0EEF005E435C /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = AD107D031D9E0EEF005E435C /* test1.gif */; };
 		AD1B01861D9D1D1A001B02F7 /* flv视频测试用例1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */; };
+		AD1DB2971DB4B409004D7DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1DB2961DB4B409004D7DE7 /* Assets.xcassets */; };
 		AD5A07C61D9A4890008FD7B2 /* haveorder.wav in Resources */ = {isa = PBXBuildFile; fileRef = AD5A07C51D9A4890008FD7B2 /* haveorder.wav */; };
-		AD5D64301D9B5D38009F9C46 /* Icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */; };
+		AD5D64301D9B5D38009F9C46 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5D642F1D9B5D38009F9C46 /* Icon-29.png */; };
 		AD5E77B81D9950990075A314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5E77B71D9950990075A314 /* main.m */; };
 		AD5E77BB1D9950990075A314 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5E77BA1D9950990075A314 /* AppDelegate.m */; };
 		AD5E77BE1D9950990075A314 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5E77BD1D9950990075A314 /* ViewController.m */; };
@@ -29,7 +30,8 @@
 		AD5E77D11D9950990075A314 /* iOS_10_NotificationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5E77D01D9950990075A314 /* iOS_10_NotificationTestTests.m */; };
 		AD5E77DC1D9950990075A314 /* iOS_10_NotificationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5E77DB1D9950990075A314 /* iOS_10_NotificationTestUITests.m */; };
 		AD5E77F01D9A1FA20075A314 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5E77EE1D9A1FA20075A314 /* Icon-60@2x.png */; };
-		AD5E77F11D9A1FA20075A314 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5E77EF1D9A1FA20075A314 /* Icon-60@3x.png */; };
+		AD5E77F11D9A1FA20075A314 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD5E77EF1D9A1FA20075A314 /* icon.png */; };
+		ADBC0F511DBE3A5200F6B8A0 /* 123.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ADBC0F501DBE3A5200F6B8A0 /* 123.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,8 +99,9 @@
 		AD0870CE1DB0B8E40044A0A2 /* SOANotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOANotificationService.m; sourceTree = "<group>"; };
 		AD107D031D9E0EEF005E435C /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test1.gif; sourceTree = "<group>"; };
 		AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "flv视频测试用例1.mp4"; sourceTree = "<group>"; };
+		AD1DB2961DB4B409004D7DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD5A07C51D9A4890008FD7B2 /* haveorder.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = haveorder.wav; sourceTree = "<group>"; };
-		AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29@2x.png"; sourceTree = "<group>"; };
+		AD5D642F1D9B5D38009F9C46 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		AD5E77B31D9950990075A314 /* iOS-10-NotificationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-10-NotificationTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5E77B71D9950990075A314 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD5E77B91D9950990075A314 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,7 +119,9 @@
 		AD5E77DD1D9950990075A314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5E77E91D99561C0075A314 /* iOS-10-NotificationTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-10-NotificationTest.entitlements"; sourceTree = "<group>"; };
 		AD5E77EE1D9A1FA20075A314 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		AD5E77EF1D9A1FA20075A314 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		AD5E77EF1D9A1FA20075A314 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		ADBC0F451DBDD1F200F6B8A0 /* SDGNOtificationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDGNOtificationExtension.entitlements; sourceTree = "<group>"; };
+		ADBC0F501DBE3A5200F6B8A0 /* 123.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +187,8 @@
 		AD0870BC1DADE44F0044A0A2 /* SDGNOtificationExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ADBC0F501DBE3A5200F6B8A0 /* 123.jpeg */,
+				ADBC0F451DBDD1F200F6B8A0 /* SDGNOtificationExtension.entitlements */,
 				AD0870BD1DADE44F0044A0A2 /* NotificationViewController.h */,
 				AD0870BE1DADE44F0044A0A2 /* NotificationViewController.m */,
 				AD0870C01DADE44F0044A0A2 /* MainInterface.storyboard */,
@@ -218,13 +225,14 @@
 		AD5E77B51D9950990075A314 /* iOS-10-NotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				AD1DB2961DB4B409004D7DE7 /* Assets.xcassets */,
 				AD08706D1DAB7B130044A0A2 /* deliveryorder.mp3 */,
 				AD107D031D9E0EEF005E435C /* test1.gif */,
 				AD1B01851D9D1D1A001B02F7 /* flv视频测试用例1.mp4 */,
-				AD5D642F1D9B5D38009F9C46 /* Icon-29@2x.png */,
+				AD5D642F1D9B5D38009F9C46 /* Icon-29.png */,
 				AD5A07C51D9A4890008FD7B2 /* haveorder.wav */,
 				AD5E77EE1D9A1FA20075A314 /* Icon-60@2x.png */,
-				AD5E77EF1D9A1FA20075A314 /* Icon-60@3x.png */,
+				AD5E77EF1D9A1FA20075A314 /* icon.png */,
 				AD5E77E91D99561C0075A314 /* iOS-10-NotificationTest.entitlements */,
 				AD5E77B91D9950990075A314 /* AppDelegate.h */,
 				AD5E77BA1D9950990075A314 /* AppDelegate.m */,
@@ -379,6 +387,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = CMJLFY38XN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					AD5E77B21D9950990075A314 = {
 						CreatedOnToolsVersion = 8.0;
@@ -438,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBC0F511DBE3A5200F6B8A0 /* 123.jpeg in Resources */,
 				AD0870C21DADE44F0044A0A2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,11 +460,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5E77F11D9A1FA20075A314 /* Icon-60@3x.png in Resources */,
+				AD5E77F11D9A1FA20075A314 /* icon.png in Resources */,
 				AD5E77C61D9950990075A314 /* LaunchScreen.storyboard in Resources */,
 				AD5A07C61D9A4890008FD7B2 /* haveorder.wav in Resources */,
 				AD5E77C11D9950990075A314 /* Main.storyboard in Resources */,
-				AD5D64301D9B5D38009F9C46 /* Icon-29@2x.png in Resources */,
+				AD1DB2971DB4B409004D7DE7 /* Assets.xcassets in Resources */,
+				AD5D64301D9B5D38009F9C46 /* Icon-29.png in Resources */,
 				AD08706E1DAB7B130044A0A2 /* deliveryorder.mp3 in Resources */,
 				AD1B01861D9D1D1A001B02F7 /* flv视频测试用例1.mp4 in Resources */,
 				AD107D041D9E0EEF005E435C /* test1.gif in Resources */,
@@ -802,6 +817,7 @@
 				AD0870B41DADE27D0044A0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD0870C71DADE44F0044A0A2 /* Build configuration list for PBXNativeTarget "SDGNOtificationExtension" */ = {
 			isa = XCConfigurationList;
@@ -810,6 +826,7 @@
 				AD0870C91DADE44F0044A0A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD5E77AE1D9950990075A314 /* Build configuration list for PBXProject "iOS-10-NotificationTest" */ = {
 			isa = XCConfigurationList;

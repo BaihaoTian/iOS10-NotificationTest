@@ -28,8 +28,10 @@
     
     // Modify the notification content here...
     self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [modified]", self.bestAttemptContent.title];
-    self.bestAttemptContent.subtitle = [NSString stringWithFormat:@"123 [modified]"];
+    self.bestAttemptContent.subtitle = [NSString stringWithFormat:@"%@ [modified]",self.bestAttemptContent.subtitle];
 
+    self.bestAttemptContent.categoryIdentifier = @"category1";
+    self.bestAttemptContent.sound = [UNNotificationSound soundNamed:@"haveorder.wav"];
     
     self.contentHandler(self.bestAttemptContent);
 }
@@ -41,6 +43,8 @@
 - (void)serviceExtensionTimeWillExpire {
     // Called just before the extension will be terminated by the system.
     // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
+    
+    
     self.contentHandler(self.bestAttemptContent);
 }
 

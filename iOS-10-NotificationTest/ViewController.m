@@ -9,13 +9,12 @@
 #import "ViewController.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
-#import <UserNotifications/UNUserNotificationCenter.h>
 #endif
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *pushPicBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pushGifBtn;
 @property (weak, nonatomic) IBOutlet UIButton *pushVideoBtn;
-    @property (weak, nonatomic) IBOutlet UIButton *pushiOS9Noti;
+@property (weak, nonatomic) IBOutlet UIButton *pushiOS9Noti;
 
 @end
 
@@ -40,7 +39,7 @@
         content.body = @"来自闪电购";
         content.badge = @1;
         NSError *error = nil;
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Icon-29@2x" ofType:@"png"];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Icon-60@2x" ofType:@"png"];
 //        NSString *path = [[NSBundle mainBundle] pathForResource:@"flv视频测试用例1" ofType:@"mp4"];
 //        NSString *path = [[NSBundle mainBundle] pathForResource:@"test1" ofType:@"gif"];
 
@@ -70,7 +69,7 @@
         content.sound = sound;
         
         // 3.触发模式
-        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:5 repeats:NO];
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:2 repeats:NO];
         
         // 4.设置UNNotificationRequest
         NSString *requestIdentifer = @"TestPicRequest";
@@ -124,7 +123,7 @@
         content.sound = sound;
         
         // 3.触发模式
-        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:2 repeats:NO];
         
         // 4.设置UNNotificationRequest
         NSString *requestIdentifer = @"TestGifRequest";
@@ -178,7 +177,7 @@
         content.sound = sound;
         
         // 3.触发模式
-        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+        UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:2 repeats:NO];
         
         // 4.设置UNNotificationRequest
         NSString *requestIdentifer = @"TestVideoRequest";

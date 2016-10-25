@@ -11,7 +11,7 @@
 
 
 
-@interface SOANotificationService ()<UNUserNotificationCenterDelegate>
+@interface SOANotificationService ()
     
 @end
 
@@ -21,11 +21,16 @@
     
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions {
     
-
     //注册推送
     [self registerNotification:application];
     
+    
     return YES;
+}
+
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 
 /**
@@ -53,7 +58,10 @@
     
     NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
 }
-  
+
+
+
+
 /**
  iOS10 app在前台 处理通知
  
@@ -103,9 +111,10 @@
  */
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
    
-    //TODO:通知的处理
+    //TODO:通知的处理(包括前台状态的通知)
+    
     NSLog(@"below iOS 10 push click");
-    completionHandler(UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert);
+//    completionHandler();
 }
 
 
@@ -141,6 +150,19 @@
 didReceiveNotificationResponse:(UNNotificationResponse *)response
          withCompletionHandler:(void(^)())completionHandler{
     
+    
+    
+    UIAlertView*alert = [[UIAlertView alloc]initWithTitle:@"提示"
+                         
+                                                  message:@"这是一个简单的警告框！"
+                         
+                                                 delegate:nil
+                         
+                                        cancelButtonTitle:@"确定"
+                         
+                                        otherButtonTitles:nil];
+    
+    [alert show];  
     //根据identifier来判断点击的哪个按钮
     NSDictionary * userInfo = response.notification.request.content.userInfo;
     UNNotificationRequest *request = response.notification.request; // 收到推送的请求
@@ -235,10 +257,10 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
         
         
             }else if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
-        //iOS8系统以下
-        //check the old API is not available
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated-declarations"
+        //iOS8系统以下
+        //check the old API is not available
         if ([application respondsToSelector:@selector(registerForRemoteNotificationTypes:)]) {
             [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge |
              UIRemoteNotificationTypeAlert |

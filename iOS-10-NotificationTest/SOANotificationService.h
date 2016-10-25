@@ -15,7 +15,7 @@
 #endif
 #import <UIKit/UIUserNotificationSettings.h>
 
-@interface SOANotificationService : NSObject <UIApplicationDelegate, UIAlertViewDelegate>
+@interface SOANotificationService : NSObject <UIApplicationDelegate, UIAlertViewDelegate, UNUserNotificationCenterDelegate>
 
 
 //iOS10 app在前台 处理通知

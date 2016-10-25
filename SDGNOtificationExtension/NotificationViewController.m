@@ -12,7 +12,13 @@
 
 @interface NotificationViewController () <UNNotificationContentExtension>
 
-@property IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *TitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
 @end
 
@@ -20,14 +26,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"1234567");
-
+    
+    
+    
     // Do any required interface initialization here.
 }
 
 - (void)didReceiveNotification:(UNNotification *)notification {
-    self.label.text = notification.request.content.body;
-    NSLog(@"1234567");
+    
+    self.TitleLabel.text = notification.request.content.title;
+    self.subtitleLabel.text = notification.request.content.subtitle;
+    self.messageLabel.text = notification.request.content.body;
+    
+//    [self.imageView setImage:[UIImage imageNamed:@"123.jpeg"]];
+    
+    
 }
 
 @end

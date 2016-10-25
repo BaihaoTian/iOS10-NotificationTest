@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS-10-NotificationTest/AppDelegate.m"
-            timestampString = "498378379.681948"
+            timestampString = "498988684.276027"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "-userNotificationCenter:willPresentNotification:withCompletionHandler:"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-application:didFailToRegisterForRemoteNotificationsWithError:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

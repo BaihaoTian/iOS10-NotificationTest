@@ -11,7 +11,6 @@
 
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
-#import <UserNotifications/UNUserNotificationCenter.h>
 #endif
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
@@ -75,6 +74,8 @@
  */
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
 
+    
+    NSLog(@"didRegisterForRemoteNotificationsWithDeviceToken");
     /*
      * service 代码
      */
@@ -93,7 +94,8 @@
  @param error       error
  */
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
-    
+    NSLog(@"didFailToRegisterForRemoteNotificationsWithError");
+
     /*
      * service 代码
      */
@@ -123,6 +125,7 @@
      */
     id<UIApplicationDelegate> service;
     for (service in [SOAComponentAppDelegate instance].services) {
+        
         if ([service respondsToSelector:@selector(userNotificationCenter:willPresentNotification:withCompletionHandler:)]){
             
             [(SOANotificationService *)service userNotificationCenter:center willPresentNotification:notification withCompletionHandler:completionHandler];
@@ -151,7 +154,6 @@
         }
     }
 }
-
 
 /**
  iOS10以下 本地通知处理

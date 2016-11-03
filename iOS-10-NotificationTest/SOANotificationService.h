@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
-#import <UIKit/UILocalNotification.h>
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #import <UserNotifications/UNUserNotificationCenter.h>

@@ -100,7 +100,7 @@
                       |UNNotificationPresentationOptionAlert);
     // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
 }
-    
+
 
 /**
  iOS10以下 远程通知处理
@@ -128,8 +128,8 @@
  */
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"标题" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-    [alert show];
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"标题" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+//    [alert show];
     // 图标上的数字减1
     application.applicationIconBadgeNumber -= 1;
     NSLog(@"iOS6及以下系统，收到通知:%@", notification);

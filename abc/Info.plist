@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>SDGPushServiceExtension</string>
+	<string>abc</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -23,11 +23,16 @@
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
-		<dict/>
+		<dict>
+			<key>UNNotificationExtensionCategory</key>
+			<string>myNotificationCategory</string>
+			<key>UNNotificationExtensionInitialContentSizeRatio</key>
+			<real>1</real>
+		</dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.usernotifications.service</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>NotificationService</string>
+		<string>com.apple.usernotifications.content-extension</string>
 	</dict>
 </dict>
 </plist>

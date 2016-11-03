@@ -38,9 +38,29 @@
     self.subtitleLabel.text = notification.request.content.subtitle;
     self.messageLabel.text = notification.request.content.body;
     
-//    [self.imageView setImage:[UIImage imageNamed:@"123.jpeg"]];
+    UIImage *image = [[UIImage alloc] initWithContentsOfFile: [self getMainBundleSources:@"bht.jpeg"]];
+    
+    [self.imageView setImage:image];
     
     
 }
+
+/**
+ 获取app沙盒资源路径(不能获取Images.xcassets内的图片)
+
+ @param sourceName eg：icon.png   resourcename+pattern
+ @return resourcePath
+ */
+- (NSString *)getMainBundleSources:(NSString *)sourceName{
+    
+    NSString *Path = [NSBundle mainBundle].resourcePath;
+    
+    NSRange range = [Path rangeOfString:@".app/"];
+    
+    Path = [Path substringToIndex:(range.location+range.length)];
+    
+    return [Path stringByAppendingString:sourceName];
+}
+
 
 @end

@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD0870A81DADE27D0044A0A2"
-               BuildableName = "SDGPushServiceExtension.appex"
-               BlueprintName = "SDGPushServiceExtension"
+               BlueprintIdentifier = "AD83D3451DC1DB0D0003368B"
+               BuildableName = "SDGNotificationServiceExtension.appex"
+               BlueprintName = "SDGNotificationServiceExtension"
                ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,33 +43,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD5E77D61D9950990075A314"
-               BuildableName = "iOS-10-NotificationTestUITests.xctest"
-               BlueprintName = "iOS-10-NotificationTestUITests"
-               ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD5E77CB1D9950990075A314"
-               BuildableName = "iOS-10-NotificationTestTests.xctest"
-               BlueprintName = "iOS-10-NotificationTestTests"
-               ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AD5E77B21D9950990075A314"
-            BuildableName = "iOS-10-NotificationTest.app"
-            BlueprintName = "iOS-10-NotificationTest"
+            BlueprintIdentifier = "AD83D3451DC1DB0D0003368B"
+            BuildableName = "SDGNotificationServiceExtension.appex"
+            BlueprintName = "SDGNotificationServiceExtension"
             ReferencedContainer = "container:iOS-10-NotificationTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -32,6 +32,9 @@
         }
     }
     
+    NSString *imagePath = [[NSBundle mainBundle]pathForResource:@"bht" ofType:@"jpeg"];
+    NSLog(@"123%@",imagePath);
+    
     return YES;
 }
 
@@ -117,21 +120,42 @@
  @param notification      UNNotification
  @param completionHandler 设置推送通知类型
  */
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-       willPresentNotification:(UNNotification *)notification
-         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
-    /*
-     * service 代码
-     */
-    id<UIApplicationDelegate> service;
-    for (service in [SOAComponentAppDelegate instance].services) {
-        
-        if ([service respondsToSelector:@selector(userNotificationCenter:willPresentNotification:withCompletionHandler:)]){
-            
-            [(SOANotificationService *)service userNotificationCenter:center willPresentNotification:notification withCompletionHandler:completionHandler];
-        }
-    }
-}
+//- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+//       willPresentNotification:(UNNotification *)notification
+//         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+//    /*
+//     * service 代码
+//     */
+//    id<UIApplicationDelegate> service;
+//    for (service in [SOAComponentAppDelegate instance].services) {
+//        
+//        if ([service respondsToSelector:@selector(userNotificationCenter:willPresentNotification:withCompletionHandler:)]){
+//            
+//            [(SOANotificationService *)service userNotificationCenter:center willPresentNotification:notification withCompletionHandler:completionHandler];
+//        }
+//    }
+//}
+
+//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+//    
+//    
+//    if ([NSStringFromSelector(aSelector) isEqualToString:@"userNotificationCenter:willPresentNotification:withCompletionHandler:"]) {
+//        return [self methodSignatureForSelector:aSelector];
+//    }
+//    return [super methodSignatureForSelector:aSelector];
+//}
+//
+//- (void)forwardInvocation:(NSInvocation *)anInvocation {
+//    //改变调用目标
+//    //    [anInvocation invokeWithTarget:[[Cat alloc] init]];
+//    
+//    SOANotificationService *service = [[SOANotificationService alloc]init];
+//
+//    //改换选择子
+//    anInvocation.selector = @selector(userNotificationCenter:willPresentNotification:withCompletionHandler:);
+//    [anInvocation invokeWithTarget:service];
+//}
+
 
     
 /**
@@ -184,22 +208,22 @@
  @param center            UNUserNotificationCenter
  @param response          UNNotificationResponse
  @param completionHandler 设置推送通知类型
- */
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-didReceiveNotificationResponse:(UNNotificationResponse *)response
-         withCompletionHandler:(void(^)())completionHandler{
-    
-    /*
-     * service 代码
-     */
-    id<UIApplicationDelegate> service;
-    for (service in [SOAComponentAppDelegate instance].services) {
-        if ([service respondsToSelector:@selector(userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:)]){
-            
-            [(SOANotificationService *)service userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
-        }
-    }
-}
+// */
+//- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+//didReceiveNotificationResponse:(UNNotificationResponse *)response
+//         withCompletionHandler:(void(^)())completionHandler{
+//    
+//    /*
+//     * service 代码
+//     */
+//    id<UIApplicationDelegate> service;
+//    for (service in [SOAComponentAppDelegate instance].services) {
+//        if ([service respondsToSelector:@selector(userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:)]){
+//            
+//            [(SOANotificationService *)service userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+//        }
+//    }
+//}
 
 
 //在非本App界面时收到推送消息，下拉消息会有快捷回复的按钮，点击按钮后调用的方法，根据identifier来判断点击的哪个按钮，notification为消息内容
